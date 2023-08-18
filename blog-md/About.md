@@ -1,0 +1,4 @@
+# About
+Here I plan to talk about the 'about' of this page, including how it was made, how I want to modify it in the future, and etc
+
+Essentially it's the 独り言 part of the page.

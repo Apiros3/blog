@@ -1,0 +1,47 @@
+
+body {
+    margin: 0;
+    font-family: 'Hubot-Sans 400', sans-serif;
+    background-color: #0d1117;
+    color: #ecf2f8;
+}
+header {
+    width: 100%;
+    height: 10%;
+}
+.page-title {
+    font-size: x-large;
+    cursor: pointer;
+}
+
+td.article-title {
+    color: #77bdfb;
+    cursor: pointer;
+}
+td.article-title:hover {
+    text-decoration: underline;
+}
+td.article-date {
+    font-size: smaller;
+    color: #89929b;
+}
+
+iframe {
+    width: 88%;
+    height: 100%;
+    margin: 0 5.5%;
+}
+.blog-list {
+    float: left;
+    width: 20%;
+    height: 85%;
+}
+.blog-content {
+    float: left;
+    width: 80%;
+    height: 85%;
+}
+footer {
+    width: 100%;
+    height: 5%;
+}

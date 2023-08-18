@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Apiros3's Blog</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/hubot-sans');
+    </style>
+    <script src="listify.js"></script>
+    <script src="render_blog.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-child">
+            <span class="page-title" onclick="render_blog('default')"><b>Apiros3 Blog Page</b></span>
+        </div>
+        <div class="header-child">
+            <!-- links -->
+
+        </div>
+    </header>
+    <div class="main">
+        <div class="blog-list" id="list">
+            BLOG-LIST LOAD FAILED
+        </div>
+        <div class="blog-content" id="content">
+            <iframe src="blog-html/default.html"></iframe>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-text">
+            Repo Link:
+            <a href="">blog</a> 
+        </div>
+    </footer>
+    <script>
+        listify()
+    </script>
+</body>
+</html>
