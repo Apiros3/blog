@@ -18,7 +18,7 @@ function listify() {
 """        
     )
     files = glob.glob(os.path.join(path, '*.md'))
-    files.sort(key=os.path.getctime, reverse=True)
+    files.sort(key=os.path.getmtime, reverse=True)
     
     for filename in files:
         with open(filename, 'r') as f: # open in readonly mode
@@ -41,7 +41,7 @@ function listify() {
         g.writelines(
 f"""
     lst.push("{str(filename)[8:-3]}");
-    update.push("{datetime.datetime.fromtimestamp(os.path.getctime(filename)).strftime('%Y-%m-%d')}")
+    update.push("{datetime.datetime.fromtimestamp(os.path.getmtime(filename)).strftime('%Y-%m-%d')}")
 """
         )
     g.writelines(
