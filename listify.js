@@ -5,7 +5,7 @@ function listify() {
     var update = [];
 
     lst.push("About");
-    update.push("2023-08-18")
+    update.push("2023-08-19")
 
     lst.push("test");
     update.push("2023-08-18")

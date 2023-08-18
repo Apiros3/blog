@@ -24,6 +24,10 @@ function listify() {
             # print(str(html))
 
         with open(f"blog-html/{str(filename)[8:-3]}.html", 'w') as f:
+            f.writelines("""
+<link rel="stylesheet" href="style.css">
+                         
+""")
             f.write(html)
 
         #append to listify() command
