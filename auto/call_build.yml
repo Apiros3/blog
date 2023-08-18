@@ -1,6 +1,11 @@
 name: Build Blog
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - blog-md/**
 
 jobs:
   build:
@@ -16,7 +21,7 @@ jobs:
       - name: Running Script
         run: |
           pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r auto/requirements.txt
           python blogify.py
           git config user.name github-actions
           git config user.email github-actions@github.com

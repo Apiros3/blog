@@ -24,7 +24,16 @@ header {
 .right15 {
     padding: 0 15px;
 }
-
+tr.blog-sidebar {
+    padding-bottom: 5px;
+}
+td.sidebar-title {
+    width: 65%;
+}
+td.sidebar-date {
+    width: 35%;
+    font-size: smaller;
+}
 td.article-title {
     color: #77bdfb;
     cursor: pointer;

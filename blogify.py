@@ -2,6 +2,11 @@ import os, glob
 import markdown
 import datetime 
 
+path = 'blog-html'
+files = glob.glob(os.path.join(path, '*.html'))
+for filename in files:
+    os.remove(filename)
+
 path = 'blog-md'
 with open("listify.js", 'w') as g:
     g.writelines(
@@ -30,6 +35,8 @@ function listify() {
 """)
             f.write(html)
 
+        if (str(filename)[8:-3] == "default"):
+            continue
         #append to listify() command
         g.writelines(
 f"""
@@ -39,7 +46,7 @@ f"""
         )
     g.writelines(
 f"""
-    var return_string = "<table>";
+    var return_string = "<table><tr class='blog-sidebar'><td class='sidebar-title'>Title:</td><td class='sidebar-date'>Last Update:</td></tr>";
     for(let i = 0; i< lst.length; i++) {{
         return_string += `
             <tr id="blog-${{lst[i]}}">

@@ -13,7 +13,7 @@ function listify() {
     lst.push("test");
     update.push("2023-08-18")
 
-    var return_string = "<table>";
+    var return_string = "<table><tr class='blog-sidebar'><td class='sidebar-title'>Title:</td><td class='sidebar-date'>Last Update:</td></tr>";
     for(let i = 0; i< lst.length; i++) {
         return_string += `
             <tr id="blog-${lst[i]}">

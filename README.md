@@ -7,14 +7,13 @@
 もしクローンして、自分用に変えたい！って思った場合は以下の数点の変更をお願いします：
 ・html内のgithub, twitterアイコンのリンク先
 ・HPタイトル
-・blog-htmlの"default.html"以外のhtmlの削除
 ・blog-mdの中身のmdファイルの削除
 
 その上で、
 ```python
   python blogify.py
 ```
-を呼ぶとビルドします。
+を呼ぶとビルドします(ついでにblog-htmlの余分なファイルを削除してくれます)。
 mdファイルをblog-mdの中にいれてビルドすると出来上がりますし、github actionsにmain.ymlを突っ込めばmainにpushするたびにビルドしてくれます！
 
 どこかのタイミングで上のこれを自動化できるpythonコード書いてもいいかな～とか思ってたりもします。
