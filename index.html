@@ -13,9 +13,11 @@
         <div class="header-child">
             <span class="page-title" onclick="render_blog('default')"><b>Apiros3 Blog Page</b></span>
         </div>
-        <div class="header-child">
+        <div class="header-child right15">
             <!-- links -->
-
+            <a href="https://github.com/Apiros3" class="link"><img src="logos/github.png"></a>
+            <a href="https://twitter.com/Apiros3" class="link"><img src="logos/twitter.png"></a>
+            
         </div>
     </header>
     <div class="main">
@@ -23,17 +25,17 @@
             BLOG-LIST LOAD FAILED
         </div>
         <div class="blog-content" id="content">
-            <iframe src="blog-html/default.html"></iframe>
         </div>
     </div>
     <footer>
         <div class="footer-text">
             Repo Link:
-            <a href="">blog</a> 
+            <a href="https://github.com/Apiros3/blog" class ="repo">Apiros3/blog</a> 
         </div>
     </footer>
     <script>
-        listify()
+        listify();
+        render_blog("default");
     </script>
 </body>
 </html>
