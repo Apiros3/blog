@@ -4,6 +4,9 @@ function listify() {
     var lst = [];
     var update = [];
 
+    lst.push("ブログ作った話");
+    update.push("2023-08-19")
+
     lst.push("About");
     update.push("2023-08-19")
 
