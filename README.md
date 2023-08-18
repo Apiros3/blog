@@ -5,15 +5,15 @@
 
 ## 初期化
 もしクローンして、自分用に変えたい！って思った場合は以下の数点の変更をお願いします：   
-・html内のgithub, twitterアイコンのリンク先
-・HPタイトル
+・html内のgithub, twitterアイコンのリンク先   
+・HPタイトル   
 ・blog-mdの中身のmdファイルの削除
 
 その上で、
-```python
+```powershell
   python blogify.py
 ```
-を呼ぶとビルドします(ついでにblog-htmlの余分なファイルを削除してくれます)。
+を呼ぶとビルドします(ついでにblog-htmlの余分なファイルを削除してくれます)。   
 mdファイルをblog-mdの中にいれてビルドすると出来上がりますし、github actionsにmain.ymlを突っ込めばmainにpushするたびにビルドしてくれます！
 
 どこかのタイミングで上のこれを自動化できるpythonコード書いてもいいかな～とか思ってたりもします。
