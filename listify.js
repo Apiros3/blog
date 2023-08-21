@@ -5,13 +5,10 @@ function listify() {
     var update = [];
 
     lst.push("ブログ作った話");
-    update.push("2023-08-18")
+    update.push("2023-08-21")
 
     lst.push("About");
-    update.push("2023-08-18")
-
-    lst.push("test");
-    update.push("2023-08-18")
+    update.push("2023-08-21")
 
     var return_string = "<table><tr class='blog-sidebar'><td class='sidebar-title'>Title:</td><td class='sidebar-date'>Last Update:</td></tr>";
     for(let i = 0; i< lst.length; i++) {
