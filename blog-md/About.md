@@ -1,4 +1,12 @@
 # About
-Here I plan to talk about the 'about' of this page, including how it was made, how I want to modify it in the future, and etc
+Here I plan to talk about the 'about' of this page
 
-Essentially it's the 独り言 part of the page.
+## Links and Queries
+The main link of this page is:    
+https://apiros3.github.io/blog/index.html
+
+To share a specific link of the page, simply append "?blog={blog title}"    
+For instance, this page can be accessed by https://apiros3.github.io/blog/index.html?blog=About 
+
+## Other
+Feel free to also visit my portfolio page at https://apiros3.github.io/personal/info-jp.html

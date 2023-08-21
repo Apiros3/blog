@@ -27,6 +27,11 @@ header {
 tr.blog-sidebar {
     padding-bottom: 5px;
 }
+/* td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+} */
 td.sidebar-title {
     width: 65%;
 }
@@ -38,6 +43,9 @@ td.article-title {
     color: #77bdfb;
     cursor: pointer;
     width: 65%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 td.article-title:hover {
     text-decoration: underline;
@@ -53,7 +61,6 @@ td.article-date {
 }
 iframe {
     box-sizing: border-box;
-    padding: 0 0 0 25px;
     width: 100%;
     height: 100%;
 }
@@ -62,6 +69,8 @@ iframe {
     height: 100%;
     box-sizing: border-box;
     border-right: solid #89929b;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 table {
     box-sizing: border-box;
