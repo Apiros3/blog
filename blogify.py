@@ -41,7 +41,7 @@ function listify() {
         g.writelines(
 f"""
     lst.push("{str(filename)[8:-3]}");
-    update.push("{datetime.datetime.fromtimestamp(os.path.getmtime(filename)).strftime('%Y-%m-%d')}")
+    update.push("{datetime.datetime.fromtimestamp(os.path.getctime(filename)).strftime('%Y-%m-%d')}")
 """
         )
     g.writelines(
