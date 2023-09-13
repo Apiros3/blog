@@ -10,6 +10,9 @@ function listify() {
     lst.push("ブログ作った話");
     update.push("2023-09-13")
 
+    lst.push("main-page案");
+    update.push("2023-09-13")
+
     lst.push("About");
     update.push("2023-09-13")
 
