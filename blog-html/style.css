@@ -31,6 +31,7 @@ h3:after
 
 a {
     color: #77bdfb;
+    text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
