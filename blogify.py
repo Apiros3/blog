@@ -18,7 +18,7 @@ function listify() {
 """        
     )
     files = glob.glob(os.path.join(path, '*.md'))
-    files.sort(key=os.path.getmtime, reverse=True)
+    files.sort(key=os.path.getctime, reverse=True)
     
     for filename in files:
         with open(filename, 'r') as f: # open in readonly mode
