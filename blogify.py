@@ -21,7 +21,7 @@ function listify() {
     files.sort(key=os.path.getctime, reverse=True)
     
     for filename in files:
-        with open(filename, 'r') as f: # open in readonly mode
+        with open(filename,  encoding="utf-8", mode = 'r') as f: # open in readonly mode
             # do your stuff
             print(str(filename))
             text = f.read()
