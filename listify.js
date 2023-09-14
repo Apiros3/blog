@@ -4,20 +4,20 @@ function listify() {
     var lst = [];
     var update = [];
 
-    lst.push("opal‚Á‚ÄƒAƒvƒŠ");
+    lst.push("opalã£ã¦ã‚¢ãƒ—ãƒª");
     update.push("2023-09-14")
 
-    lst.push("main-pageˆÄ");
+    lst.push("main-pageæ¡ˆ");
     update.push("2023-09-13")
 
-    lst.push("”ƒ‚¢‚½‚¢‚à‚ÌƒŠƒXƒg");
+    lst.push("è²·ã„ãŸã„ã‚‚ã®ãƒªã‚¹ãƒˆ");
     update.push("2023-09-13")
-
-    lst.push("ƒuƒƒOì‚Á‚½˜b");
-    update.push("2023-08-19")
 
     lst.push("About");
-    update.push("2023-08-18")
+    update.push("2023-09-13")
+
+    lst.push("ãƒ–ãƒ­ã‚°ä½œã£ãŸè©±");
+    update.push("2023-08-19")
 
     var return_string = "<table><tr class='blog-sidebar'><td class='sidebar-title'>Title:</td><td class='sidebar-date'>Last Update:</td></tr>";
     for(let i = 0; i< lst.length; i++) {
