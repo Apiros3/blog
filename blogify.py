@@ -34,7 +34,9 @@ function listify() {
                          
 """)
             f.write(html)
-
+            f.writelines("""
+<script src="script.js"></script>
+""")
         if (str(filename)[8:-3] == "default"):
             continue
         #append to listify() command
