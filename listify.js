@@ -4,6 +4,9 @@ function listify() {
     var lst = [];
     var update = [];
 
+    lst.push("事実は小説より奇なり");
+    update.push("2023-09-14")
+
     lst.push("opalってアプリ");
     update.push("2023-09-14")
 

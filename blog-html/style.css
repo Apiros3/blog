@@ -1,5 +1,37 @@
 body {
     color: #ecf2f8;
     font-family: 'Hubot-Sans 400', sans-serif;
-    padding: 10px 25px;
+    padding: 20px 25px;
+}
+
+h2 {
+    padding: 0 10px;
+}
+h3 {
+    padding: 0 10px;
+}
+p {
+    padding: 0 20px;
+}
+
+
+h2:after
+{
+    content:' ';
+    display:block;
+    border:0.7px solid #ecf2f8;
+}
+
+h3:after
+{
+    content:' ';
+    display:block;
+    border:0.7px solid #ecf2f8;
+}
+
+a {
+    color: #77bdfb;
+}
+a:hover {
+    text-decoration: underline;
 }
