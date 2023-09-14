@@ -31,11 +31,14 @@ function listify() {
         with open(f"blog-html/{str(filename)[8:-3]}.html", 'w') as f:
             f.writelines("""
 <link rel="stylesheet" href="style.css">
-                         
+<script src="script.js"></script>
+                                                  
 """)
             f.write(html)
             f.writelines("""
-<script src="script.js"></script>
+<script>
+    init()
+</script>
 """)
         if (str(filename)[8:-3] == "default"):
             continue
