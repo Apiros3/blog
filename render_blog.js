@@ -32,7 +32,7 @@ function initial_blog_load() {
     for(let i = 0; i < genre.length; i++) {
         if (last_genre != a[i][0]) {
             return_string += `
-                <tr class="genre">
+                <tr class="genre" style="border-bottom:1px solid #89929b">
                     <td colspan="2">
                         ${a[i][0]}
                     </td>

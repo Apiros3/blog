@@ -14,19 +14,25 @@ p {
     padding: 0 20px;
 }
 
+h1:after
+{
+    content:' ';
+    display:block;
+    border:1px solid #89929b;
+}
 
 h2:after
 {
     content:' ';
     display:block;
-    border:0.7px solid #ecf2f8;
+    border:1px solid #89929b;
 }
 
 h3:after
 {
     content:' ';
     display:block;
-    border:0.7px solid #ecf2f8;
+    border:1px solid #89929b;
 }
 
 a {
