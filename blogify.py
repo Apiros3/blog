@@ -11,10 +11,11 @@ path = 'blog-md'
 with open("listify.js", 'w') as g:
     g.writelines(
 """
+var lst = [];
+var update = [];
+var genre = [];
+
 function listify() {
-    var cnt = 0;
-    var lst = [];
-    var update = [];
 """        
     )
     files = glob.glob(os.path.join(path, '*.md'))
@@ -27,8 +28,15 @@ function listify() {
             text = f.read()
             html = markdown.markdown(text)
             # print(str(html))
+        genre = "Other:"
+        filepath = str(filename[8:-3])
+        for i in range(len(str(filename[8:-3]))) :
+            if (filename[8+i] == '_') :
+                genre = filename[8:8+i] + ":"
+                filepath = filename[(9+i):-3]
+                break 
 
-        with open(f"blog-html/{str(filename)[8:-3]}.html", 'w') as f:
+        with open(f"blog-html/{filepath}.html", 'w') as f:
             f.writelines("""
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
@@ -45,27 +53,9 @@ function listify() {
         #append to listify() command
         g.writelines(
 f"""
-    lst.push("{str(filename)[8:-3]}");
+    lst.push("{filepath}");
     update.push("{datetime.datetime.fromtimestamp(os.path.getctime(filename)).strftime('%Y-%m-%d')}")
+    genre.push("{genre}")
 """
         )
-    g.writelines(
-f"""
-    var return_string = "<table><tr class='blog-sidebar'><td class='sidebar-title'>Title:</td><td class='sidebar-date'>Last Update:</td></tr>";
-    for(let i = 0; i< lst.length; i++) {{
-        return_string += `
-            <tr id="blog-${{lst[i]}}">
-                <td class="article-title" onclick="render_blog('${{lst[i]}}')">
-                    ${{lst[i]}}
-                </td> 
-                <td class="article-date">
-                    ${{update[i]}}
-                </td>
-            </tr>
-        `
-    }}
-    return_string += "</table>"
-    document.getElementById("list").innerHTML = return_string;
-"""        
-    )
     g.writelines("""}""")

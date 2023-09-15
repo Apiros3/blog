@@ -55,6 +55,10 @@ td.article-date {
     color: #89929b;
     width: 35%;
 }
+tr.genre {
+    height: 20px;
+    font-size: smaller;
+}
 .main {
     display: flex;
     height: 83%;

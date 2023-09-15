@@ -1,40 +1,31 @@
 
+var lst = [];
+var update = [];
+var genre = [];
+
 function listify() {
-    var cnt = 0;
-    var lst = [];
-    var update = [];
 
     lst.push("事実は小説より奇なり");
-    update.push("2023-09-14")
+    update.push("2023-09-15")
+    genre.push("日記:")
 
     lst.push("opalってアプリ");
     update.push("2023-09-14")
+    genre.push("Other:")
 
     lst.push("main-page案");
     update.push("2023-09-13")
+    genre.push("Other:")
 
     lst.push("買いたいものリスト");
     update.push("2023-09-13")
+    genre.push("Other:")
 
     lst.push("About");
     update.push("2023-09-13")
+    genre.push("Other:")
 
     lst.push("ブログ作った話");
     update.push("2023-08-19")
-
-    var return_string = "<table><tr class='blog-sidebar'><td class='sidebar-title'>Title:</td><td class='sidebar-date'>Last Update:</td></tr>";
-    for(let i = 0; i< lst.length; i++) {
-        return_string += `
-            <tr id="blog-${lst[i]}">
-                <td class="article-title" onclick="render_blog('${lst[i]}')">
-                    ${lst[i]}
-                </td> 
-                <td class="article-date">
-                    ${update[i]}
-                </td>
-            </tr>
-        `
-    }
-    return_string += "</table>"
-    document.getElementById("list").innerHTML = return_string;
+    genre.push("Other:")
 }
